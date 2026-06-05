@@ -311,10 +311,8 @@ jobs:
               [ "$count" -eq 6 ] && echo "✓ All 6 PS-BOF x64 objects deployed to container" || \
                 { echo "✗ Expected 6 PS-BOF x64 objects in container bin, got $count"; exit 1; }
               count=$(ls /workspace/TK-BOF/_bin/*.x64.o | wc -l)
-              [ "$count" -eq 6 ] && echo "✓ All 6 TK-BO古韵 I need to continue with the edits. Let me do them one at a time to avoid issues.
-              count=$(ls /tmp/adaptixc2/dist/BOF-Collection/TK-BOF/_bin/*.x64.o | wc -l)
-              [ "$count" -eq 6 ] && echo "✓ All 6 TK-BOF x64 objects deployed to container" || \
-                { echo "✗ Expected 6 TK-BOF x64 objects in container bin, got $count"; exit 1; }
+              [ "$count" -eq 6 ] && echo "✓ All 6 TK-BOF x64 objects compiled" || \
+                { echo "✗ Expected 6 TK-BOF x64 objects, got $count"; exit 1; }
               count=$(ls /workspace/PostEx-BOF/_bin/*.x64.o | wc -l)
               [ "$count" -eq 1 ] && echo "✓ PostEx-BOF x64 objects compiled" || \
                 { echo "✗ Expected 1 PostEx-BOF x64 object, got $count"; exit 1; }
