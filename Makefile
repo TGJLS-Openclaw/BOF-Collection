@@ -1,4 +1,4 @@
-SUBDIRS := FS-BOF Exit-BOF TK-BOF PS-BOF
+SUBDIRS := FS-BOF Exit-BOF TK-BOF PS-BOF PostEx-BOF
 
 .PHONY: all $(SUBDIRS) clean docker-build
 

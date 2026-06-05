@@ -87,6 +87,14 @@ Token management: steal, use, make, rm, revert, privget. [More details](TK-BOF/R
 |revert|`tk revert`|Drop impersonation and revert to process token|
 |privget|`tk privget`|Enable all privileges on the current token|
 
+## PostEx-BOF
+
+Post-exploitation utilities. [More details](PostEx-BOF/README.md)
+
+|Commands|Usage|Notes|
+|--------|-----|-----|
+|bfind|`bfind`|Recursively search for common CTF flag files (user.txt, root.txt, flag.txt, etc.) across the filesystem and print their contents|
+
 ## Credits
 
 - [Extension-Kit](https://github.com/Adaptix-Framework/Extension-Kit): Project structure and README

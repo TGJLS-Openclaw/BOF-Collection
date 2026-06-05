@@ -247,3 +247,13 @@ tasks:
   # ps-kill (CI-02)
   - cmdline: "ps kill {{pid}}"
     not_expected: "error"
+
+  # ── BFINDBOF ──
+
+  # bfind-positive-match
+  - cmdline: "bfind"
+    expected_regex: "(?i)Found flag:.*C:\\\\Temp\\\\fsbof-test\\\\user\\.txt.*flag_contents_12345"
+
+  # bfind-negative-match
+  - cmdline: "bfind"
+    expected: "[-] No flags found."
